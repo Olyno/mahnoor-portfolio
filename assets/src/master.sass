@@ -1,0 +1,254 @@
+.MainScreen
+  display: flex
+  margin-top: 5vw
+  img
+    margin-top: 2vw
+    margin-left: 14vw
+    width: 30vw
+    height: 30vw
+  .contents
+    position: relative
+    background-color: white
+    color: black
+    border-radius: 2vw
+    width: 35vw
+    height: 30vw
+    margin-left: 8vw
+    margin-top: 1vw
+    text-align: center
+    img
+      top: -5vw
+      left: -6.5vw
+      position: absolute
+      height: 5vw
+      width: 20vw
+    h1
+      font-family: 'Great Vibes', cursive
+      font-weight: normal
+      font-size: 4vw
+      color: #FFC2AF
+    p
+      display: block
+      margin: auto
+      margin-bottom: 2vw
+      font-size: 1.1vw
+      text-align: left
+      width: 30vw
+    button
+      all: unset
+      border-radius: 2% 2% 2% 2% / 50% 50% 50% 50%
+      background-color: #FFC2AF
+      width: 20vw
+      height: 4vw
+      margin-top: 1vw
+      font-size: 1vw
+      &:hover
+        cursor: pointer
+.MesProjets
+  h1
+    text-align: center
+    font-family: 'Great Vibes', cursive
+    font-weight: normal
+    font-size: 4.5vw
+    color: #FFC2AF
+    margin-top: 10vw
+  .menu
+    margin-left: 13vw
+    margin-right: 13vw
+    margin-top: 5vw
+    .bar
+      height: .2vw
+      width: 100vw
+      background-color: white
+      margin-left: -13vw
+    ul
+      list-style: none
+      justify-content: space-between
+      display: flex
+      font-size: 1.2vw
+      .selected::before
+        background-color: #FFE246
+      li:hover
+        cursor: pointer
+      li::before
+        content: ""
+        position: absolute
+        display: block
+        height: 1vw
+        width: 0.5vw
+        text-align: center
+        background-color: white
+        margin-top: -1.8vw
+      li:nth-of-type(1)::before
+        margin-left: .5vw
+      li:nth-of-type(2)::before
+        margin-left: 7.8vw
+      li:nth-of-type(3)::before
+        margin-left: 1.3vw
+      li:nth-of-type(4)::before
+        margin-left: 1.1vw
+      li:nth-of-type(5)::before
+        margin-left: 1.1vw
+      li:nth-of-type(6)::before
+        margin-left: 4.5vw
+  .Projets
+    display: flex
+    flex-wrap: wrap
+    margin: 5vw 13vw 0 14vw
+    .box
+      width: 21vw
+      margin: 1vw
+      &:hover
+        cursor: pointer
+      img
+        width: 100%
+      h1
+        color: #FFE246
+        width: 25vw
+        margin-left: -2.2vw
+        font-size: 4vw
+.Contact
+  h1
+    text-align: center
+    font-family: 'Great Vibes', cursive
+    font-weight: normal
+    font-size: 4.5vw
+    color: #FFC2AF
+    margin-top: 10vw
+  .content
+    display: flex
+    width: 72vw
+    justify-content: space-between
+    margin: 0 13vw 0 13vw
+  .form
+    width: 32vw
+    p
+      font-size: 1.2vw
+    input:not(:last-child)
+      all: unset
+      width: calc(100% - 1vw)
+      background-color: #323232
+      border: #FFFFFF .1vw solid
+      color: #FFFFFF
+      margin-bottom: 1.5vw
+      height: 2.5vw
+      padding-left: 1vw
+    textarea
+      all: unset
+      width: calc(100% - 1vw)
+      background-color: #323232
+      border: #FFFFFF .1vw solid
+      color: #FFFFFF
+      height: 5vw
+      padding-left: 1vw
+      padding-top: .5vw
+    input:last-child
+      all: unset
+      border-radius: 2% 2% 2% 2% / 50% 50% 50% 50%
+      background-color: #FFC2AF
+      width: 10vw
+      height: 3vw
+      margin-top: 1vw
+      font-size: 1vw
+      text-align: center
+      color: black
+      font-weight: bold
+      margin-left: 11vw
+      margin-top: 3vw
+      &:hover
+        cursor: pointer
+  .right
+    width: 32vw
+    img
+      display: block
+      margin: auto
+      width: 15vw
+    p
+      font-size: 1.2vw
+    a
+      text-decoration: none
+      color: #FFC2AF
+
+.popup
+  top: 0
+  position: fixed
+  display: flex
+  background-color: white
+  width: 80vw
+  height: 40vw
+  margin: 10vw
+  margin-top: 5vw
+  color: black
+  img
+    margin-left: 5vw
+  .vista
+    width: 40vw
+    height: 30vw
+    margin-top: 4vw
+  .exellence
+    width: 23vw
+    height: 28vw
+    margin-top: 6vw
+    margin-left: 10vw
+    margin-right: 10vw
+  .levis
+    width: 35vw
+    height: 28vw
+    margin-top: 8vw
+    margin-right: 4vw
+  .sabahenna
+    width: 25vw
+    height: 18vw
+    margin-top: 10vw
+    margin-right: 10vw
+    margin-left: 10vw
+  .retouche
+    width: 70vw
+    height: 35vw
+    margin-top: 2vw
+  .tatouage
+    width: 70vw
+    height: 35vw
+    margin-top: 2vw
+  .retoucheelem
+    width: 50vw
+    height: 35vw
+    margin-top: 3vw
+    margin-left: 15vw
+  div
+    width: 40vw
+    height: 35vw
+    margin-right: 7vw
+    margin-top: 9vw
+    h2
+      font-size: 3vw
+    p
+      font-size: 1.5vw
+  svg
+    position: absolute
+    top: 1vw
+    right: 1vw
+    &:hover
+      cursor: pointer
+
+.fade
+  top: 0
+  position: fixed
+  display: flex
+  background-color: rgba(0, 0, 0, 0.5)
+  width: 100vw
+  height: 100vh
+
+
+
+placeholder
+  background-color: red
+  background-color: red
+  background-color: red
+  background-color: red
+  background-color: red
+  background-color: red
+  background-color: red
+  background-color: red
+  background-color: red
+  background-color: red
