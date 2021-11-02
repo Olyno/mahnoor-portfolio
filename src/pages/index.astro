@@ -1,0 +1,69 @@
+---
+import DefaultLayout from '../layouts/default.astro';
+import Projects from '../components/Projects.astro';
+
+import ExcellencePopup from '../components/popups/Excellence.astro';
+import LightPopup from '../components/popups/Light.astro';
+import LevisPopup from '../components/popups/Levis.astro';
+import SabahennaPopup from '../components/popups/Sabahenna.astro';
+import RetouchePopup from '../components/popups/Retouche.astro';
+import TatouagePopup from '../components/popups/Tatouage.astro';
+import ElementPopup from '../components/popups/Element.astro';
+---
+
+<DefaultLayout page="index">
+  <div class="MainScreen" id="about">
+    <img src="/assets/images/mahnoor_image.png" alt="Photo de Mahnoor" />
+    <div class="contents">
+      <img src="/assets/images/scotch.png" alt="Bout de scotch" />
+      <h1>Web Designer</h1>
+      <p>
+        Je suis étudiante en Web Design chez Epitech Digital (anciennement
+        Sup'Internet) en dernière année d’un Bachelor Management de projet web.
+      </p>
+      <p>
+        Je suis à la recherche d’un stage de 6 mois du 3 janvier au 1er juillet
+        2022.
+      </p>
+      <a
+        style="color: inherit; text-decoration: none"
+        href="/assets/Mahnoor_Chaudhry_CV.pdf"
+        target="_blank">
+        <button class="download">Télécharger mon CV</button>
+      </a>
+    </div>
+  </div>
+  <Projects />
+  <div class="Contact" id="Contact">
+    <h1>Contactez moi</h1>
+    <div class="content">
+      <form class="form" action="/index" method="post">
+        <p>
+          N'hésitez pas à me contacter pour un stage, de la Freelance, ou toute
+          autre demande...
+        </p>
+        <input type="text" name="name" placeholder="Votre prénom..." />
+        <input type="email" name="email" placeholder="Votre mail..." />
+        <textarea name="name" placeholder="Votre message..."></textarea>
+        <input type="submit" name="submit" value="Envoyer" />
+      </form>
+      <div class="right">
+        <img src="/assets/images/send.png" alt="send icon" />
+        <p>
+          Remplissez le formulaire ci-dessous ou envoyez-moi un mail à l'adresse
+          suivante :
+          <a href="mailto:mahnoor.chaudhry10@gmail.com"
+            >mahnoor.chaudhry10@gmail.com</a>
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="fade" style="display: none;"></div>
+  <LightPopup />
+  <ExcellencePopup />
+  <LevisPopup />
+  <SabahennaPopup />
+  <RetouchePopup />
+  <TatouagePopup />
+  <ElementPopup />
+</DefaultLayout>

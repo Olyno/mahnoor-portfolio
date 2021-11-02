@@ -1,0 +1,47 @@
+---
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Sidebar from '../components/Sidebar.astro';
+
+export interface Props {
+  title?: string;
+  page: string;
+}
+
+const { title, page } = Astro.props;
+---
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>{title || 'Portfolio Mahnoor'}</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="stylesheet" href={Astro.resolve('../styles/global.sass')} />
+    <link
+      rel="stylesheet"
+      media="(max-width: 740px)"
+      href={Astro.resolve('../styles/m_structure.sass')} />
+    <link
+      rel="stylesheet"
+      media="(min-width: 739px)"
+      href={Astro.resolve('../styles/structure.sass')} />
+    <link
+      rel="stylesheet"
+      media="(max-width: 740px)"
+      href={Astro.resolve('../styles/m_' + page + '.sass')} />
+    <link
+      rel="stylesheet"
+      media="(min-width: 739px)"
+      href={Astro.resolve('../styles/' + page + '.sass')} />
+    <script src="/assets/main.js"></script>
+  </head>
+  <body>
+    <main>
+      <Header client:idle />
+      <slot />
+      <Footer client:visible />
+      <Sidebar client:idle />
+    </main>
+  </body>
+</html>

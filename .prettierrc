@@ -1,0 +1,17 @@
+{
+  "arrowParens": "avoid",
+  "bracketSpacing": true,
+  "quoteProps": "as-needed",
+  "tabWidth": 2,
+  "singleQuote": true,
+  "semi": true,
+  "jsxSingleQuote": false,
+  "overrides": [
+    {
+      "files": ".astro",
+      "options": {
+        "parser": "astro"
+      }
+    }
+  ]
+}

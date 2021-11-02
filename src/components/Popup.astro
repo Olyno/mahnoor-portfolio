@@ -1,0 +1,51 @@
+---
+export interface Props {
+  name?: string;
+  description?: string;
+  assetName: string;
+}
+
+const { name, description, assetName } = Astro.props;
+---
+
+<div class={'popup ' + assetName + 'p'} style="display: none;">
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="52.804"
+    height="50.517"
+    viewBox="0 0 52.804 50.517">
+    <g
+      id="Groupe_131"
+      data-name="Groupe 131"
+      transform="translate(3.534 3.534)">
+      <line
+        id="Ligne_6"
+        data-name="Ligne 6"
+        x2="45.735"
+        y2="43.449"
+        transform="translate(0 0)"
+        fill="none"
+        stroke="#323232"
+        stroke-linecap="round"
+        stroke-width="5"></line>
+      <line
+        id="Ligne_7"
+        data-name="Ligne 7"
+        x1="45.735"
+        y2="43.449"
+        transform="translate(0 0)"
+        fill="none"
+        stroke="#323232"
+        stroke-linecap="round"
+        stroke-width="5"></line>
+    </g>
+  </svg>
+  <img
+    class={assetName}
+    src={'/assets/images/popups/' + assetName + '.png'}
+    alt={assetName} />
+  {name && description && <div class="text">
+      <h2>{name}</h2>
+      <p>{description}</p>
+    </div>}
+</div>
